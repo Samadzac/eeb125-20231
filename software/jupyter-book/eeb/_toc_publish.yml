@@ -1,0 +1,9 @@
+# Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+
+format: jb-book
+root: book-materials/eeb/intro
+parts:
+  - caption: Course Syllabus
+    chapters:
+    - file: syllabus/20231/eeb/eeb125_syllabus.ipynb
