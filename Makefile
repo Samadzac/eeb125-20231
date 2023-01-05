@@ -1,21 +1,16 @@
-# By default, build local versions of ggr and eeb books
-all: book-ggr book-eeb
+TERM=20231
 
-book-ggr:
-	jupyter-book build --config software/jupyter-book/ggr/_config.yml --toc software/jupyter-book/ggr/_toc.yml --path-output _build/ggr .
+# By default, build local versions of book
+all: book
 
-book-ggr-publish:
-	jupyter-book build --config software/jupyter-book/ggr/_config.yml --toc software/jupyter-book/ggr/_toc_publish.yml --path-output _build/ggr-publish .
+book:
+	jupyter-book build ${TERM}
 
-ggr-publish-source:
-	python software/publish.py ggr
+publish-source:
+	python software/publish.py ${TERM}
 
+clean-publish-source:
+	rm -rf _publish
 
-book-eeb:
-	jupyter-book build --config software/jupyter-book/eeb/_config.yml --toc software/jupyter-book/eeb/_toc.yml --path-output _build/eeb .
-
-book-eeb-publish:
-	jupyter-book build --config software/jupyter-book/eeb/_config.yml --toc software/jupyter-book/eeb/_toc_publish.yml --path-output _build/eeb-publish .
-
-eeb-publish-source:
-	python software/publish.py eeb
+book-publish:
+	jupyter-book build .

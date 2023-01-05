@@ -1,0 +1,71 @@
+# Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+
+format: jb-book
+root: jupyter-book/index
+parts:
+  - caption: Course Syllabus
+    chapters:
+    - file: syllabus/eeb125_syllabus.ipynb
+
+  # - caption: Software Guides
+  #   chapters:
+  #   - file: guides/jupyterhub_guide.ipynb
+  #   - file: guides/markus_guide.ipynb
+
+  # - caption: Week 1
+  #   chapters:
+  #   - url: https://github.com/UofTCompDSci/cds-course-materials
+  #     title: TODO
+
+  # - caption: Week 2
+  #   chapters:
+  #   - file: weekly-materials/week02/homework/marking/Homework_2
+
+  # - caption: Week 3
+  #   chapters:
+  #   - file: weekly-materials/week03/lab/marking/Lab_3
+  #   - file: weekly-materials/week03/homework/marking/Homework_3
+
+  # - caption: Week 4
+  #   chapters:
+  #   - file: weekly-materials/week04/lab/marking/Lab_4
+  #   - file: weekly-materials/week04/homework/marking/Homework_4
+
+  # - caption: Week 5
+  #   chapters:
+  #   - file: weekly-materials/week05/lab/marking/Lab_5
+  #   - file: weekly-materials/week05/homework/marking/Homework_5
+
+  # - caption: Week 6 (midterm)
+  #   chapters:
+  #   - url: https://github.com/UofTCompDSci/cds-course-materials
+  #     title: TODO
+
+  # - caption: Week 7
+  #   chapters:
+  #   - file: weekly-materials/week07/lab/marking/Lab_7
+  #   - file: weekly-materials/week07/homework/marking/Homework_7
+
+  # - caption: Week 8
+  #   chapters:
+  #   - file: weekly-materials/week08/lab/marking/Lab_8
+
+  # - caption: Week 9
+  #   chapters:
+  #   - file: weekly-materials/week09/lab/public/Lab_9
+
+  # - caption: Week 10
+  #   chapters:
+  #   - url: https://github.com/UofTCompDSci/cds-course-materials
+  #     title: TODO
+
+  # - caption: Week 11
+  #   chapters:
+  #   - url: https://github.com/UofTCompDSci/cds-course-materials
+  #     title: TODO
+
+  # - caption: Week 12
+  #   chapters:
+  #   - url: https://github.com/UofTCompDSci/cds-course-materials
+  #     title: TODO
