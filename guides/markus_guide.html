@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Welcome to the EEB125 Jupyter Book! &#8212; EEB125 Book</title>
+    <title>Guide to Using MarkUs &#8212; EEB125 Book</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -53,7 +53,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="shortcut icon" href="../_static/favicon.png"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="EEB125 Winter 2023 Course Syllabus (DRAFT)" href="../syllabus/eeb125_syllabus.html" />
+    <link rel="prev" title="Guide to Using Jupyter Notebooks and JupyterHub" href="jupyterhub_guide.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -102,8 +102,8 @@ const thebe_selector_output = ".output, .cell_output"
     <div class="bd-toc-item active">
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
-            <li class="toctree-l1 current active">
-                <a class="reference internal" href="#">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../jupyter-book/index.html">
                     Welcome to the EEB125 Jupyter Book!
                 </a>
             </li>
@@ -135,14 +135,14 @@ const thebe_selector_output = ".output, .cell_output"
   Resources
  </span>
 </p>
-<ul class="nav bd-sidenav">
+<ul class="current nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="../guides/jupyterhub_guide.html">
+  <a class="reference internal" href="jupyterhub_guide.html">
    JupyterHub Guide
   </a>
  </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../guides/markus_guide.html">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
    MarkUs Guide
   </a>
  </li>
@@ -197,6 +197,35 @@ title="Toggle navigation"
         
     </div>
     <div class="header-article__right">
+<div class="menu-dropdown menu-dropdown-launch-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Launch interactive content">
+      <i class="fas fa-rocket"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://jupyter.utoronto.ca/hub/user-redirect/git-pull?repo=https%3A//github.com/UofTCompDSci/eeb125-20231&urlpath=tree/eeb125-20231/guides/markus_guide.ipynb&branch=main"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Launch on JupyterHub"
+>
+  
+
+<span class="headerbtn__icon-container">
+  
+    <img src="../_static/images/logo_jupyterhub.svg">
+  </span>
+<span class="headerbtn__text-container">JupyterHub</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
 <button onclick="toggleFullScreen()"
   class="headerbtn"
   data-toggle="tooltip"
@@ -219,7 +248,7 @@ title="Fullscreen mode"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="../_sources/jupyter-book/index.md"
+        <a href="../_sources/guides/markus_guide.ipynb"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -230,7 +259,7 @@ title="Download source file"
 <span class="headerbtn__icon-container">
   <i class="fas fa-file"></i>
   </span>
-<span class="headerbtn__text-container">.md</span>
+<span class="headerbtn__text-container">.ipynb</span>
 </a>
 
       </li>
@@ -256,23 +285,90 @@ title="Print to PDF"
     </ul>
   </div>
 </div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
 
     </div>
 </div>
 
 <!-- Table of contents -->
 <div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#getting-to-markus">
+   Getting to MarkUs
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#submitting-work-to-markus">
+   Submitting Work to MarkUs
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#running-automated-tests">
+   Running Automated Tests
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#viewing-feedback-and-graded-results">
+   Viewing Feedback and Graded Results
+  </a>
+ </li>
+</ul>
+
+    </nav>
 </div>
     </div>
     <div class="article row">
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Welcome to the EEB125 Jupyter Book!</h1>
+                <h1>Guide to Using MarkUs</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
                         
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#getting-to-markus">
+   Getting to MarkUs
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#submitting-work-to-markus">
+   Submitting Work to MarkUs
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#running-automated-tests">
+   Running Automated Tests
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#viewing-feedback-and-graded-results">
+   Viewing Feedback and Graded Results
+  </a>
+ </li>
+</ul>
+
+                        </nav>
                     </div>
                 </div>
             </div>
@@ -280,23 +376,75 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="welcome-to-the-eeb125-jupyter-book">
-<h1>Welcome to the EEB125 Jupyter Book!<a class="headerlink" href="#welcome-to-the-eeb125-jupyter-book" title="Permalink to this headline">#</a></h1>
-<div class="toctree-wrapper compound">
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Quick Links</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../syllabus/eeb125_syllabus.html">Course Syllabus</a></li>
-<li class="toctree-l1"><a class="reference external" href="https://q.utoronto.ca/courses/296332/announcements">Announcements</a></li>
-<li class="toctree-l1"><a class="reference external" href="https://edstem.org/us/courses/33202/">Ed Discussion</a></li>
+  <section class="tex2jax_ignore mathjax_ignore" id="guide-to-using-markus">
+<h1>Guide to Using MarkUs<a class="headerlink" href="#guide-to-using-markus" title="Permalink to this headline">#</a></h1>
+<p>MarkUs is a web application we’re using in this course to manage your labs and homeworks.
+MarkUs lets you submit your Jupyter notebook files for feedback and grading from both automated tests and your TAs.
+In this guide, we’ll go over the basics of how you’ll use MarkUs in this course.</p>
+<p>(Fun fact: MarkUs is developed and maintained by the Department of Computer Science and Professor David Liu right here at the University of Toronto!)</p>
+<section id="getting-to-markus">
+<h2>Getting to MarkUs<a class="headerlink" href="#getting-to-markus" title="Permalink to this headline">#</a></h2>
+<p>To access MarkUs, visit the following URL: <a class="reference external" href="https://markus-ds.teach.cs.toronto.edu">https://markus-ds.teach.cs.toronto.edu</a></p>
+<ul class="simple">
+<li><p><em>Tip</em>: Control/Command-click to open the link in a new tab so you can still see this guide.</p></li>
 </ul>
-</div>
-<div class="toctree-wrapper compound">
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Resources</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../guides/jupyterhub_guide.html">JupyterHub Guide</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../guides/markus_guide.html">MarkUs Guide</a></li>
+<p>You’ll be prompted to login with your UTORid and password.
+After logging in, you’ll be taken to your MarkUs homepage, which shows your courses that are using MarkUs this semester (likely just this course).</p>
+<p>Click on your course to be taken to the MarkUs course.</p>
+</section>
+<section id="submitting-work-to-markus">
+<h2>Submitting Work to MarkUs<a class="headerlink" href="#submitting-work-to-markus" title="Permalink to this headline">#</a></h2>
+<p>On your course page, you’ll see a list of assessments that your instructors have set up.</p>
+<ul class="simple">
+<li><p><em>Note</em>: These assessments will be set up and published on Markus throughout the semester, so you won’t see them right away.</p></li>
 </ul>
-</div>
+<p>To submit a Jupyter notebook file to MarkUs:</p>
+<ol>
+<li><p>First, go to the <a class="reference external" href="https://jupyter.utoronto.ca">University of Toronto JupyterHub</a> and download the file you want to submit (e.g., <code class="docutils literal notranslate"><span class="pre">Lab_1.ipynb</span></code>).</p></li>
+<li><p>Then in MarkUs, click on the link to the assessment you want to submit to (e.g., <strong>lab1: Introduction to Data Science Tools</strong>).</p>
+<p>You’ll now see the assignment page. There’s some information about the assignment here, but this will likely all be repeated from your assessment handout.</p>
+</li>
+<li><p>Click the <strong>Submissions</strong> tab. This takes you to the page where you’ll submit your work for the assignment. You’ll see a list of files you’ve submitted, which starts off empty.</p></li>
+<li><p>Click on the <strong>Submit File</strong> button on the top-right corner of the table of files. This opens a popup dialog.</p></li>
+<li><p>Click on <strong>Browse</strong> button, and select the notebook file you downloaded in Step 1.</p>
+<p><em>Tip</em>: if your instructor has configured the assessment to only allow you to submit a file with a particular name (useful for autograding), you’ll need to make sure the name of your file matches the required filename. In the popup dialog, you can also choose to automatically rename the file you’re submitting to match the required filename.</p>
+</li>
+<li><p>Finally, click <strong>Save</strong> to submit the file!</p></li>
+</ol>
+<p>The table of submitted files should refresh, showing the file you just submitted.
+You can click on the file to preview it directly in your web browser, which lets you check whether you submitted the correct file.
+You can also download the file you submitted by clicking on the download icon next to the name of the file.</p>
+</section>
+<section id="running-automated-tests">
+<h2>Running Automated Tests<a class="headerlink" href="#running-automated-tests" title="Permalink to this headline">#</a></h2>
+<p>For each assignment, we provide some automated tests that check whether your submission matches the values we expected.</p>
+<p>Here is how to run them:</p>
+<ol class="simple">
+<li><p>Click the <strong>Automated Testing</strong> tab.</p></li>
+<li><p>Click button <strong>Run tests</strong> and wait several seconds while the test is run.</p></li>
+<li><p>Reload the webpage. Hopefully you see something like this. If not, and you can’t figure it out, ask for help!</p></li>
+</ol>
+<p><img alt="Download As" src="../_images/lab1testresult.png" /></p>
+</section>
+<section id="viewing-feedback-and-graded-results">
+<h2>Viewing Feedback and Graded Results<a class="headerlink" href="#viewing-feedback-and-graded-results" title="Permalink to this headline">#</a></h2>
+<p>Once your assignment has been graded by a Teaching Assistant (TA), you will be able to view your results and feedback left by your TA.</p>
+<ol>
+<li><p>Click on the assignment, and go to the <strong>Results</strong> tab</p></li>
+<li><p>You can view your grade breakdown on the right side of the screen, like below:</p>
+<p><img alt="Marking Rubric" src="../_images/marking-rubric.jpg" /></p>
+</li>
+<li><p>On the left side under <strong>Submission files</strong>, you can go through your submitted files and view feedback. Using the dropdown menu, you can switch between files. Hover over the yellow boxes to read any annotations left by the TA.</p>
+<p><img alt="Submission Files" src="../_images/submission-files.jpg" /></p>
+</li>
+<li><p>You can also view these annotations in the <strong>Annotations</strong> tab.</p>
+<p><img alt="Annotations" src="../_images/annotations.jpg" /></p>
+</li>
+<li><p>Click on the <strong>Test Results</strong> to see the results of running our automated tests on your submission. If a test failed, it would be highlighted in red.</p>
+<p><img alt="Test Results" src="../_images/test-results.jpg" /></p>
+</li>
+</ol>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -312,7 +460,7 @@ title="Print to PDF"
         },
         kernelOptions: {
             kernelName: "python3",
-            path: "./jupyter-book"
+            path: "./guides"
         },
         predefinedOutput: true
     }
@@ -326,12 +474,12 @@ title="Print to PDF"
                 
     <!-- Previous / next buttons -->
 <div class='prev-next-area'>
-    <a class='right-next' id="next-link" href="../syllabus/eeb125_syllabus.html" title="next page">
-    <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">EEB125 Winter 2023 Course Syllabus (DRAFT)</p>
-    </div>
-    <i class="fas fa-angle-right"></i>
+    <a class='left-prev' id="prev-link" href="jupyterhub_guide.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Guide to Using Jupyter Notebooks and JupyterHub</p>
+        </div>
     </a>
 </div>
             </footer>
