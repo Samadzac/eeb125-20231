@@ -4,9 +4,21 @@
 format: jb-book
 root: jupyter-book/index
 parts:
-  - caption: Course Syllabus
+  - caption: Quick Links
     chapters:
     - file: syllabus/eeb125_syllabus.ipynb
+      title: Course Syllabus
+    - url: https://q.utoronto.ca/courses/296332/announcements
+      title: Announcements
+    - url: https://edstem.org/us/courses/33202/
+      title: Ed Discussion
+
+  - caption: Resources
+    chapters:
+    - file: guides/jupyterhub_guide.ipynb
+      title: JupyterHub Guide
+    - file: guides/markus_guide.ipynb
+      title: MarkUs Guide
 
   # - caption: Software Guides
   #   chapters:
