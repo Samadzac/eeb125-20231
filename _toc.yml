@@ -22,7 +22,7 @@ parts:
 
   - caption: Week 1
     chapters:
-    - url: https://uoftcompdsci.github.io/eeb125-20231/weekly-materials/week01/lecture/week1_TPF.pdf
+    - url: https://q.utoronto.ca/files/24259959/download?download_frd=1
       title: Prof. Parins-Fukuchi's Slides
     - file: weekly-materials/week01/lecture/Class1_EEB125_DL.ipynb
       title: Prof. Liu's Notebook
