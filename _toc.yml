@@ -26,6 +26,8 @@ parts:
       title: Prof. Parins-Fukuchi's Slides
     - file: weekly-materials/week01/lecture/Class1_EEB125_DL.ipynb
       title: Prof. Liu's Notebook
+    - file: weekly-materials/week01/homework/Homework_1.ipynb
+      title: Week 1 Homework
 
   # - caption: Week 2
   #   chapters:
