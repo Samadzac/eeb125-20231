@@ -1,4 +1,4 @@
-# Welcome to the EEB125 Jupyter Book!
+# 👋 Course Website for GGR274H1-S Winter 2023
 
 ```{tableofcontents}
 ```
