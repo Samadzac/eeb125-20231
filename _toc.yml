@@ -20,15 +20,12 @@ parts:
     - file: guides/markus_guide.ipynb
       title: MarkUs Guide
 
-  # - caption: Software Guides
-  #   chapters:
-  #   - file: guides/jupyterhub_guide.ipynb
-  #   - file: guides/markus_guide.ipynb
-
-  # - caption: Week 1
-  #   chapters:
-  #   - url: https://github.com/UofTCompDSci/cds-course-materials
-  #     title: TODO
+  - caption: Week 1
+    chapters:
+    # - url: https://uoftcompdsci.github.io/eeb125-20231/weekly-materials/week01/lecture/week1_TPF.pdf
+    #   title: Prof. Parins-Fukuchi's Slides
+    - file: weekly-materials/week01/lecture/Class1_EEB125_DL.ipynb
+      title: Prof. Liu's Notebook
 
   # - caption: Week 2
   #   chapters:
