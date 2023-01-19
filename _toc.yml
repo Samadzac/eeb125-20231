@@ -34,8 +34,8 @@ parts:
     - file: weekly-materials/week02/lecture/lecture_week2.ipynb
       title: Tomo's Notebook
 
-  #   - file: weekly-materials/week02/homework/Homework_2.ipynb
-  #     title: Week 2 Homework
+    - file: weekly-materials/week02/homework/Homework_2.ipynb
+      title: Week 2 Homework
 
   # - caption: Week 3
   #   chapters:
